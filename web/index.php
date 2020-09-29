@@ -22,21 +22,8 @@
         <link href="css/loader.css" rel="stylesheet">
     </head>
     
-    <body onload="pageLoad()">
-        
-        <div id="loader-wrapper">
-        <img src='img/500.png' id='loader-logo'>
-            <div class="loader">
-                <div class="loader__bar"></div>
-                <div class="loader__bar"></div>
-                <div class="loader__bar"></div>
-                <div class="loader__bar"></div>
-                <div class="loader__bar"></div>
-                <div class="loader__ball"></div>
-            </div>
-        </div>
-        
-        <div id="content" style="display: none">
+    <body>
+        <div id="content">
             
             <?php include 'includes/navbar.php'; ?> 
             

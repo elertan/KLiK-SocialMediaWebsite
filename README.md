@@ -1,9 +1,14 @@
 <p align="center">
-  <img src="src/_git%20assets/cover.png" width="600" align="center"/>
+  <img src="web/_git%20assets/cover.png" width="600" align="center"/>
 </p>
 
 > KLiK is a PHP based Information Pool System (or simply a Social Media Website), consisting of a complete Login/Registration system, User Profile system, Chat room, Forum system and Blog/Polls/Event Management System.
 
+# 0x0DEFACED STUFF
+To get the database running:
+execute once you up all services:
+`docker-compose exec db sh -c 'mysql -u docker -p klik_database < /db.sql'`
+enter password: `docker` if it asks for one
 
 # Table of Contents
 
@@ -153,7 +158,7 @@ AJAX
 ### Application Dashboard
 
 <p align='center'>
-  <img src="src/_git%20assets/dashboard.png" width="500" align="center"/>
+  <img src="web/_git%20assets/dashboard.png" width="500" align="center"/>
 </p>
 
 The Dashboard provides a central interface to most features of the application. The `User profile card` on the upper left corner of the screen provides a profile summary, as well as a link to the profile and the profile-editing page. The creator button on the upper right corner provides a prominent link to the Team page, which showcases the `KLiK Creators`.
@@ -164,7 +169,7 @@ The 4 tab interface in the center provides access to `latest`, or most recently 
 ### Management Systems
 
 <p align="center">
-  <img src="src/_git%20assets/management.png" width="600" align="center"/>
+  <img src="web/_git%20assets/management.png" width="600" align="center"/>
 </p>
 
 * `Forum System`:
@@ -203,7 +208,7 @@ The 4 tab interface in the center provides access to `latest`, or most recently 
 ### Login/Registration and User Authentication
 
 <p>
-  <img src="src/_git%20assets/login.png" width="400" align="right"/>
+  <img src="web/_git%20assets/login.png" width="400" align="right"/>
 </p>
 
 KLiK supports a complete login/registration and User Profile system. On startup, the application shows options for logging in, signing up or contacting the website admin via email. Each user can make a unique username which cannot be changed later. The user `passwords` are `hashed` before storing in database so even admins do not have access to the original passwords as well. Additional User information include `Full Name`, `email`, `Profile Image`, `Profile Headline`, `Gender` and `Bio`.
@@ -215,7 +220,7 @@ The app uses several authentication methods for signing up and logging in. It ch
 ### User Profile System
 
 <p>
-  <img src="src/_git%20assets/profile.png" width="350" align="left"/>
+  <img src="web/_git%20assets/profile.png" width="350" align="left"/>
 </p>
 
 KLiK has a complete `User profile system`. Each user is assigned a profile on signing up, with which the user can create Forums, Blogs, Events etc and interact with the app's features. The user's full name, headline and bio, as well as profile image are optional, meaning that anyone can signup without setting those. In that case, the user will be assigned a default user image and the headline, bio and full name will be empty.
@@ -227,7 +232,7 @@ There is also a `Profile Editing System` which allows the User to edit his profi
 ### ChatRoom / Inbox
 
 <p align="center">
-  <img src="src/_git%20assets/inbox.png" width="600" align="center"/>
+  <img src="web/_git%20assets/inbox.png" width="600" align="center"/>
 </p>
 
 KLiK also has a chatbox, which uses `PHP` & `AJAX` for real-time chatting with other users. The section on the left is a list of all the users currently on the website, while the right chat screen is for displaying the ingoing and outgoing messages. A user can access a chat with a certain user by clicking on him/her in the users list, which will retrieve all the chat messages from the database. The ingoing and outgoing messages are styled differently in order to maintain readability. Chatting is done in real-time, without the need to refresh the page continuously.
@@ -297,6 +302,6 @@ $sql = "select uidUsers from users where uidUsers=?;";
 
 A huge thanks to the wonderful team without which this entire project would not have been possible. Check out our profiles and star our repos! :)
 
-<img src="src/_git%20assets/me.png" width="150"/> | <img src="src/_git%20assets/kamal.png" width="150"/> | <img src="src/_git%20assets/ubaid.png" width="150"/> | <img src="src/_git%20assets/ait.png" width="150"/>
+<img src="web/_git%20assets/me.png" width="150"/> | <img src="web/_git%20assets/kamal.png" width="150"/> | <img src="web/_git%20assets/ubaid.png" width="150"/> | <img src="web/_git%20assets/ait.png" width="150"/>
 ---|---|---|---
 [msaad1999](https://github.com/msaad1999) | [skamal16](https://github.com/skamal16) | [UbaidAsim](https://github.com/aitasadduq) | [aitasadduq](https://github.com/aitasadduq)
